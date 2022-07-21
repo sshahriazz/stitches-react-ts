@@ -10,7 +10,6 @@ import type {
 } from "@react-types/shared";
 import type { AriaButtonProps } from "@react-types/button";
 import type { FocusRingAria } from "@react-aria/focus";
-// import useWarning from "hooks/use-warning";
 import ButtonDrip from "utils/drip";
 import { CSS } from "theme/stitches.config";
 import { NormalColors } from "utils/prop-types";
@@ -194,8 +193,8 @@ const Button = React.forwardRef(
         isHovered={isHovered || (ghost && isFocused)}
         isFocusVisible={isFocusVisible && !disabled}
         className={clsx(
-          "trident-button",
-          `trident-button--${getState}`,
+          "nextui-button",
+          `nextui-button--${getState}`,
           className
         )}
         css={{
@@ -230,16 +229,16 @@ const Button = React.forwardRef(
               {hasIcon}
             </ButtonIcon>
             <div
-              className={clsx("trident-button-text", {
-                "trident-button-text-right": isRight,
-                "trident-button-text-left": !isRight,
+              className={clsx("nextui-button-text", {
+                "nextui-button-text-right": isRight,
+                "nextui-button-text-left": !isRight,
               })}
             >
               {children}
             </div>
           </>
         ) : (
-          <span className="trident-button-text">{children}</span>
+          <span className="nextui-button-text">{children}</span>
         )}
         <ButtonDrip color="white" {...dripBindings} />
       </StyledButton>
@@ -254,10 +253,10 @@ type ButtonComponent<T, P = {}> = React.ForwardRefExoticComponent<
 };
 
 if (__DEV__) {
-  Button.displayName = "trident.Button";
+  Button.displayName = "NextUI.Button";
 }
 
-Button.toString = () => ".trident-button";
+Button.toString = () => ".nextui-button";
 
 export default withDefaults(Button, defaultProps) as ButtonComponent<
   HTMLElement,
