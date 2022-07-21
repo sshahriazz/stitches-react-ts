@@ -8,11 +8,11 @@ export default function deepMerge(result) {
       // eslint-disable-next-line no-prototype-builtins
       if (item.hasOwnProperty(key)) {
         if (
-          typeof result[key] === 'object' &&
+          typeof result[key] === "object" &&
           result[key] &&
-          Object.prototype.toString.call(result[key]) !== '[object Array]'
+          Object.prototype.toString.call(result[key]) !== "[object Array]"
         ) {
-          if (typeof item[key] === 'object' && item[key] !== null) {
+          if (typeof item[key] === "object" && item[key] !== null) {
             result[key] = deepMerge({}, result[key], item[key]);
           } else {
             result[key] = item[key];

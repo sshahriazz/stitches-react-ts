@@ -1,22 +1,24 @@
 import { createStitches } from "@stitches/react";
 import commonTheme from "./common";
 import lightTheme from "./light-theme";
-import type * as Stitches from '@stitches/react';
-
+import type * as Stitches from "@stitches/react";
+import deepMerge from "utils/deep-merge";
+import darkTheme from "./dark-theme";
+import { Theme } from "./types";
 
 export const stitches = createStitches({
   ...commonTheme,
   theme: {
     ...commonTheme.theme,
     shadows: {
-        ...lightTheme.shadows
+      ...lightTheme.shadows,
     },
     dropShadows: {
-        ...lightTheme.dropShadows
+      ...lightTheme.dropShadows,
     },
     colors: {
       ...commonTheme.theme.colors,
-      ...lightTheme.colors
+      ...lightTheme.colors,
     },
   },
 });
@@ -30,16 +32,15 @@ export const getCssText = stitches.getCssText;
 export const theme = stitches.theme;
 export const config = stitches.config;
 
-// export const createTheme = ({ type, theme, className }: Theme) => {
-//     if (!type) {
-//       throw new Error('Theme type is required');
-//     }
-//     return createThemeBase(
-//       className || `${type}-theme`,
-//       deepMerge(type === 'dark' ? darkTheme : lightTheme, theme)
-//     );
-// };
-  
+export const createTheme = ({ type, theme, className }: Theme) => {
+  if (!type) {
+    throw new Error("Theme type is required");
+  }
+  return createThemeBase(
+    className || `${type}-theme`,
+    deepMerge(type === "dark" ? darkTheme : lightTheme, theme)
+  );
+};
 
 export type VariantProps<T> = Stitches.VariantProps<T>;
 export type CSS = Stitches.CSS<typeof config>;
