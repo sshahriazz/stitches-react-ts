@@ -2,6 +2,7 @@ import Avatar from "blocks/avatar";
 import Button from "blocks/button";
 import Card from "blocks/card";
 import Col from "blocks/col";
+import Container from "blocks/container";
 import Grid from "blocks/grid";
 import Input from "blocks/input";
 import Link from "blocks/link";
@@ -50,7 +51,7 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
   return (
-    <>
+    <Container>
       <Text>Form</Text>
       <Grid.Container gap={4}>
         <Grid>
@@ -355,7 +356,7 @@ function App() {
           <Loading type="points" color="white" size="sm" />
         </Button>
       </Button.Group>
-    </>
+    </Container>
   );
 }
 
