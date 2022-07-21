@@ -1,6 +1,9 @@
 import Button from "blocks/button";
+import Col from "blocks/col";
 import Grid from "blocks/grid";
+import Link from "blocks/link";
 import Loading from "blocks/loading";
+import Row from "blocks/row";
 import Spacer from "blocks/spacer";
 import Text from "blocks/text";
 import AppContext from "context/Context";
@@ -19,12 +22,17 @@ function App() {
   return (
     <>
       <p>size demo</p>
-      <Button size="xs">Mini</Button>
-      <Spacer y={0.5} />
-      <Button size="sm">Small</Button>
-      <Spacer y={0.5} />
-      <Button>Medium</Button>
-      <Spacer y={0.5} />
+      <Row>
+        <Link href="/">Hello</Link>
+        <Button size="xs">Mini</Button>
+        <Col>
+          <Button size="sm">Small</Button>
+        </Col>
+        <Spacer y={0.5} />
+        <Button>Medium</Button>
+        <Spacer y={0.5} />
+      </Row>
+
       <Button size="lg">Large</Button>
       <Spacer y={0.5} />
       <Button size="xl">Xlarge</Button>
