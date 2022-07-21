@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyledLinkIcon } from './link.styles';
+import React from "react";
+import { StyledLinkIcon } from "./link.styles";
 
 export const LinkIcon: React.FC<{}> = () => {
   return (
@@ -13,7 +13,7 @@ export const LinkIcon: React.FC<{}> = () => {
       strokeLinejoin="round"
       fill="none"
       shapeRendering="geometricPrecision"
-      className="nextui-link-icon"
+      className="trident-link-icon"
     >
       <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
       <path d="M15 3h6v6" />
@@ -22,6 +22,6 @@ export const LinkIcon: React.FC<{}> = () => {
   );
 };
 
-LinkIcon.toString = () => '.nextui-link-icon';
+LinkIcon.toString = () => ".trident-link-icon";
 
 export default React.memo(LinkIcon);

@@ -68,7 +68,7 @@ const Divider: React.FC<React.PropsWithChildren<DividerProps>> = ({
         <StyledDividerText
           css={{ ...alignCss }}
           color={textColor}
-          className="nextui-divider-text"
+          className="trident-divider-text"
         >
           {children}
         </StyledDividerText>
@@ -77,7 +77,7 @@ const Divider: React.FC<React.PropsWithChildren<DividerProps>> = ({
   );
 };
 
-Divider.toString = () => ".nextui-divider";
+Divider.toString = () => ".trident-divider";
 
 const MemoDivider = React.memo(Divider);
 

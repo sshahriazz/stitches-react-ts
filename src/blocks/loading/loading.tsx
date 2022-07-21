@@ -30,7 +30,7 @@ export type LoadingProps = Props &
   NativeAttrs &
   LoadingContainerVariantsProps & { css?: CSS };
 
-const preClass = "nextui-loading";
+const preClass = "trident-loading";
 
 const Loading: React.FC<React.PropsWithChildren<LoadingProps>> = ({
   children,

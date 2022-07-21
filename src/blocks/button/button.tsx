@@ -193,8 +193,8 @@ const Button = React.forwardRef(
         isHovered={isHovered || (ghost && isFocused)}
         isFocusVisible={isFocusVisible && !disabled}
         className={clsx(
-          "nextui-button",
-          `nextui-button--${getState}`,
+          "trident-button",
+          `trident-button--${getState}`,
           className
         )}
         css={{
@@ -229,16 +229,16 @@ const Button = React.forwardRef(
               {hasIcon}
             </ButtonIcon>
             <div
-              className={clsx("nextui-button-text", {
-                "nextui-button-text-right": isRight,
-                "nextui-button-text-left": !isRight,
+              className={clsx("trident-button-text", {
+                "trident-button-text-right": isRight,
+                "trident-button-text-left": !isRight,
               })}
             >
               {children}
             </div>
           </>
         ) : (
-          <span className="nextui-button-text">{children}</span>
+          <span className="trident-button-text">{children}</span>
         )}
         <ButtonDrip color="white" {...dripBindings} />
       </StyledButton>
@@ -256,7 +256,7 @@ if (__DEV__) {
   Button.displayName = "NextUI.Button";
 }
 
-Button.toString = () => ".nextui-button";
+Button.toString = () => ".trident-button";
 
 export default withDefaults(Button, defaultProps) as ButtonComponent<
   HTMLElement,

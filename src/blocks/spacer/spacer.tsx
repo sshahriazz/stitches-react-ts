@@ -39,7 +39,7 @@ const Spacer: React.FC<SpacerProps> = ({ x, y, inline, css, ...props }) => {
   );
 };
 
-Spacer.toString = () => ".nextui-spacer";
+Spacer.toString = () => ".trident-spacer";
 
 const MemoSpacer = React.memo(Spacer);
 

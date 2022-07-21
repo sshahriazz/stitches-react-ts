@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.0",
     "@react-aria/button": "^3.5.1",
     "@react-aria/focus": "^3.6.1",
     "@react-aria/overlays": "^3.9.1",

@@ -95,7 +95,7 @@ if (__DEV__) {
   TextChild.displayName = "NextUI.TextChild";
 }
 
-TextChild.toString = () => ".nextui-text-child";
+TextChild.toString = () => ".trident-text-child";
 
 const MemoTextChild = React.memo(TextChild);
 

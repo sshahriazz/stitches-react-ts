@@ -51,7 +51,7 @@ const Row: React.FC<React.PropsWithChildren<RowProps>> = ({
   );
 };
 
-Row.toString = () => ".nextui-row";
+Row.toString = () => ".trident-row";
 
 const MemoRow = React.memo(Row);
 

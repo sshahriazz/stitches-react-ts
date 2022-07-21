@@ -29,7 +29,7 @@ const ImageSkeleton: React.FC<ImageSkeletonProps> = React.memo(
     return (
       <StyledImageSkeleton
         css={{ opacity, ...(css as any) }}
-        className={clsx("nextui-image-skeleton", className)}
+        className={clsx("trident-image-skeleton", className)}
         {...props}
       />
     );
@@ -40,6 +40,6 @@ if (__DEV__) {
   ImageSkeleton.displayName = "NextUI.ImageSkeleton";
 }
 
-ImageSkeleton.toString = () => ".nextui-image-skeleton";
+ImageSkeleton.toString = () => ".trident-image-skeleton";
 
 export default withDefaults(ImageSkeleton, defaultProps);

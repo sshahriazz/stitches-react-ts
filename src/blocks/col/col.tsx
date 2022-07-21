@@ -43,7 +43,7 @@ const Col: React.FC<React.PropsWithChildren<ColProps>> = ({
   );
 };
 
-Col.toString = () => ".nextui-column";
+Col.toString = () => ".trident-column";
 
 const MemoCol = React.memo(Col);
 

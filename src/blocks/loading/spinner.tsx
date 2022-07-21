@@ -39,17 +39,17 @@ const Spinner: React.FC<React.PropsWithChildren<SpinnerProps>> = ({
 
   return (
     <StyledSpinner
-      className={clsx("nextui-spinner", className)}
+      className={clsx("trident-spinner", className)}
       color={color}
       size={size}
       {...props}
     >
       <StyledSpinnerContainer
-        className="nextui-spinner-container"
+        className="trident-spinner-container"
         aria-label={ariaLabel}
       >
         {[...new Array(12)].map((_, index) => (
-          <StyledSpinnerSpan key={`nextui-spinner-${index}`} />
+          <StyledSpinnerSpan key={`trident-spinner-${index}`} />
         ))}
       </StyledSpinnerContainer>
       {children && (
@@ -61,6 +61,6 @@ const Spinner: React.FC<React.PropsWithChildren<SpinnerProps>> = ({
   );
 };
 
-Spinner.toString = () => ".nextui-spinner";
+Spinner.toString = () => ".trident-spinner";
 
 export default Spinner;

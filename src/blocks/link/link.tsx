@@ -36,6 +36,6 @@ if (__DEV__) {
   Link.displayName = "NextUI.Link";
 }
 
-Link.toString = () => ".nextui-link";
+Link.toString = () => ".trident-link";
 
 export default withDefaults(Link, defaultProps);

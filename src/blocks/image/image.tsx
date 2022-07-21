@@ -127,8 +127,8 @@ export const Image = React.forwardRef(
     return (
       <StyledImageContainer
         className={clsx(
-          "nextui-image-container",
-          `nextui-image--${getState}`,
+          "trident-image-container",
+          `trident-image--${getState}`,
           className
         )}
         data-state={getState}
@@ -142,7 +142,7 @@ export const Image = React.forwardRef(
         {showSkeleton && <ImageSkeleton opacity={1} />}
         <StyledImage
           ref={imageRef}
-          className="nextui-image"
+          className="trident-image"
           width={width}
           height={height}
           onLoad={onImageLoaded}
@@ -164,7 +164,7 @@ if (__DEV__) {
   Image.displayName = "NextUI.Image";
 }
 
-Image.toString = () => ".nextui-image";
+Image.toString = () => ".trident-image";
 
 type MemoImageComponent<T, P = {}> = React.ForwardRefExoticComponent<
   PropsWithoutRef<P> & RefAttributes<T>
