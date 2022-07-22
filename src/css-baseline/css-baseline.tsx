@@ -13,7 +13,7 @@ const globalStyles = globalCss({
   "::-ms-clear": {
     display: "none",
   },
-  "input::-webkit-outer-spin-button, ::-webkit-inner-spin-button": {
+  "input::-webkit-outer-spin-button, input::-webkit-inner-spin-button": {
     WebkitAppearance: "none",
     margin: 0,
   },
