@@ -85,7 +85,6 @@ function App() {
         </Grid>
         <Grid>
           <Input
-            clearable
             helperText="Please enter your name"
             label="Name"
             placeholder="Enter your name"
@@ -104,11 +103,10 @@ function App() {
           <Input
             clearable
             color="success"
-            initialValue="getnextui"
-            helperText="Excelent username"
+            helperText="cute number"
             type="number"
-            label="Username"
-            placeholder="Enter your username"
+            label="Number Test"
+            placeholder="Enter any number"
           />
         </Grid>
         <Grid>
