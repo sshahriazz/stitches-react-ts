@@ -4,7 +4,6 @@ import Drip from "utils/drip";
 import { CSS } from "theme/stitches.config";
 import { useCard } from "./use-card";
 import type { UseCardProps } from "./use-card";
-// import { Image, Divider } from "./index";
 import {
   StyledCard,
   StyledCardHeader as CardHeader,

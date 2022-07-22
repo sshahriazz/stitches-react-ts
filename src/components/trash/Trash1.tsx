@@ -1,4 +1,4 @@
-import { faChair } from "@fortawesome/free-solid-svg-icons";
+import { faChair, faHatHard } from "@fortawesome/free-solid-svg-icons";
 import Avatar from "blocks/avatar";
 import Button from "blocks/button";
 import Card from "blocks/card";
@@ -92,6 +92,7 @@ const Trash1 = () => {
       {" "}
       <Spacer y={3} />
       <Button
+        auto
         ghost
         color="default"
         icon={<FontAwesome color={"current"} icon={faChair} />}
@@ -120,23 +121,13 @@ const Trash1 = () => {
       <Button icon={<HeartIcon />} disabled>
         Delete User
       </Button>
-      <Button
-        color={"error"}
-        auto
-        iconRight
-        icon={<HeartIcon filled />}
-      ></Button>
+      <Button color={"error"} icon={<FontAwesome icon={faHatHard} />} />
       <Spacer y={3} />
-      <Input clearable bordered labelPlaceholder="Name" initialValue="NextUI" />
+      <Input clearable bordered labelPlaceholder="Name" initialValue="Text" />
       <Spacer y={2.5} />
-      <Input
-        clearable
-        underlined
-        labelPlaceholder="Name"
-        initialValue="NextUI"
-      />
+      <Input clearable underlined labelPlaceholder="Name" initialValue="Text" />
       <Spacer y={1.5} />
-      <Input clearable label="Name" placeholder="Name" initialValue="NextUI" />
+      <Input clearable label="Name" placeholder="Name" initialValue="Text" />
       <Text>Form</Text>
       <Grid.Container gap={4}>
         <Grid>

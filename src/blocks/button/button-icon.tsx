@@ -28,7 +28,7 @@ export const StyledButtonIcon = styled("span", {
   variants: {
     isAuto: {
       true: {
-        position: "relative",
+        // position: "absolute",
         transform: "none",
         top: "0%",
       },
