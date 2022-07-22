@@ -1,3 +1,5 @@
+import { faChair } from "@fortawesome/free-solid-svg-icons";
+import { FaceIcon } from "@radix-ui/react-icons";
 import Avatar from "blocks/avatar";
 import Button from "blocks/button";
 import Card from "blocks/card";
@@ -10,12 +12,47 @@ import Loading from "blocks/loading";
 import Row from "blocks/row";
 import Spacer from "blocks/spacer";
 import Text from "blocks/text";
+import { FontAwesome } from "components";
 import AppContext from "context/Context";
 import useInput from "hooks/use-input";
 import useTheme from "hooks/use-theme";
-import React, { useContext } from "react";
+import React, { FC, useContext } from "react";
 import { useSSRTheme } from "theme/ssr-provider";
-
+export const HeartIcon: FC<{
+  fill?: string;
+  filled?: boolean;
+  size?: string;
+  height?: string;
+  width?: string;
+  label?: string;
+}> = ({
+  fill = "currentColor",
+  filled,
+  size,
+  height,
+  width,
+  label,
+  ...props
+}) => {
+  return (
+    <svg
+      width={size || width || 24}
+      height={size || height || 24}
+      viewBox="0 0 24 24"
+      fill={filled ? fill : "none"}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"
+        stroke={fill}
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
 function App() {
   const {
     config: { isDark },
@@ -52,6 +89,50 @@ function App() {
   }, [value]);
   return (
     <Container>
+      <Spacer y={3} />
+      <Button
+        ghost
+        auto
+        color="error"
+        icon={<FontAwesome fill="currentColor" icon={faChair} />}
+      />
+      <Spacer y={1} />
+
+      <Button
+        auto
+        bordered
+        color="gradient"
+        icon={<FontAwesome fill="currentColor" icon={faChair} />}
+      >
+        Testing
+      </Button>
+      <Spacer y={1} />
+      <Button iconRight={<HeartIcon fill="currentColor" />}>
+        Take a photo
+      </Button>
+      <Spacer y={1} />
+      <Button icon={<HeartIcon fill="currentColor" />} color="success">
+        Lock
+      </Button>
+      <Spacer y={1} />
+      <Button icon={<HeartIcon fill="currentColor" filled />} color="secondary">
+        Notifications
+      </Button>
+      <Spacer y={1} />
+      <Button icon={<HeartIcon fill="currentColor" />} color="error" flat>
+        Delete User
+      </Button>
+      <Spacer y={1} />
+      <Button icon={<HeartIcon />} disabled>
+        Delete User
+      </Button>
+      <Button
+        color={"error"}
+        auto
+        iconRight
+        icon={<HeartIcon filled />}
+      ></Button>
+      <Spacer y={3} />
       <Input clearable bordered labelPlaceholder="Name" initialValue="NextUI" />
       <Spacer y={2.5} />
       <Input
