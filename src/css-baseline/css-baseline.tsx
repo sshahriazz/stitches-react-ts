@@ -7,6 +7,19 @@ const globalStyles = globalCss({
     textRendering: "geometricPrecision",
     WebkitTapHighlightColor: "transparent",
   },
+  "::-ms-reveal": {
+    display: "none",
+  },
+  "::-ms-clear": {
+    display: "none",
+  },
+  "input::-webkit-outer-spin-button, ::-webkit-inner-spin-button": {
+    WebkitAppearance: "none",
+    margin: 0,
+  },
+  "input[type=number]": {
+    MozAppearance: "textfield",
+  },
   html: {
     fontSize: "$base",
   },

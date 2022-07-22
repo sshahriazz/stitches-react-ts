@@ -92,7 +92,7 @@ export const TextChild = React.forwardRef(
 );
 
 if (__DEV__) {
-  TextChild.displayName = "NextUI.TextChild";
+  TextChild.displayName = "Trident.TextChild";
 }
 
 TextChild.toString = () => ".trident-text-child";

@@ -52,12 +52,23 @@ function App() {
   }, [value]);
   return (
     <Container>
+      <Input clearable bordered labelPlaceholder="Name" initialValue="NextUI" />
+      <Spacer y={2.5} />
+      <Input
+        clearable
+        underlined
+        labelPlaceholder="Name"
+        initialValue="NextUI"
+      />
+      <Spacer y={1.5} />
+      <Input clearable label="Name" placeholder="Name" initialValue="NextUI" />
       <Text>Form</Text>
       <Grid.Container gap={4}>
         <Grid>
           <Input
             {...bindings}
             clearable
+            bordered
             shadow={false}
             onClearClick={reset}
             //@ts-ignore
@@ -95,7 +106,7 @@ function App() {
             color="success"
             initialValue="getnextui"
             helperText="Excelent username"
-            type="test"
+            type="number"
             label="Username"
             placeholder="Enter your username"
           />
@@ -148,7 +159,7 @@ function App() {
       </Grid.Container>
       <Card css={{ mw: "400px" }}>
         <Card.Body>
-          <Text>A basic card</Text>
+          <Text h2>A basic card</Text>
         </Card.Body>
       </Card>
       <p>Dark mode demo</p>

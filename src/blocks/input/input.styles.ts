@@ -229,6 +229,7 @@ export const StyledInput = styled("input", {
   size: "100%",
   minWidth: 0,
   WebkitAppearance: "none",
+
   "::placeholder": {
     color: "$$inputPlaceholderColor",
     transition: "opacity 0.25s ease 0s",

@@ -161,7 +161,7 @@ export const Image = React.forwardRef(
 );
 
 if (__DEV__) {
-  Image.displayName = "NextUI.Image";
+  Image.displayName = "Trident.Image";
 }
 
 Image.toString = () => ".trident-image";

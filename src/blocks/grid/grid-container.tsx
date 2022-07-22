@@ -50,7 +50,7 @@ const GridContainer = React.forwardRef<
   );
 });
 
-GridContainer.displayName = "NextUI.GridContainer";
+GridContainer.displayName = "Trident.GridContainer";
 GridContainer.toString = () => ".trident-grid-container";
 
 type GridContainerComponent<T, P = {}> = React.ForwardRefExoticComponent<

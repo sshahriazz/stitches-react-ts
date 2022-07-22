@@ -115,7 +115,7 @@ type AvatarComponent<P = {}> = React.NamedExoticComponent<P> & {
 };
 
 if (__DEV__) {
-  Avatar.displayName = "NextUI.Avatar";
+  Avatar.displayName = "Trident.Avatar";
 }
 
 Avatar.toString = () => ".trident-avatar";

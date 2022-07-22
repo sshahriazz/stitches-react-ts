@@ -33,7 +33,7 @@ const Link = React.forwardRef<React.ElementRef<typeof StyledLink>, LinkProps>(
 );
 
 if (__DEV__) {
-  Link.displayName = "NextUI.Link";
+  Link.displayName = "Trident.Link";
 }
 
 Link.toString = () => ".trident-link";

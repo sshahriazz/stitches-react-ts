@@ -66,7 +66,7 @@ const InputPassword = React.forwardRef<
   }
 );
 if (__DEV__) {
-  InputPassword.displayName = "NextUI.InputPassword";
+  InputPassword.displayName = "Trident.InputPassword";
 }
 
 InputPassword.toString = () => ".nextui-input-password";

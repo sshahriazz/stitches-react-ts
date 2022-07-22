@@ -40,7 +40,7 @@ export const AvatarGroup = React.forwardRef(
 );
 
 if (__DEV__) {
-  AvatarGroup.displayName = "NextUI.AvatarGroup";
+  AvatarGroup.displayName = "Trident.AvatarGroup";
 }
 
 AvatarGroup.toString = () => ".trident-avatar-group";

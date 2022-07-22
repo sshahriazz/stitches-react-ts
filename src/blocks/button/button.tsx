@@ -253,7 +253,7 @@ type ButtonComponent<T, P = {}> = React.ForwardRefExoticComponent<
 };
 
 if (__DEV__) {
-  Button.displayName = "NextUI.Button";
+  Button.displayName = "Trident.Button";
 }
 
 Button.toString = () => ".trident-button";

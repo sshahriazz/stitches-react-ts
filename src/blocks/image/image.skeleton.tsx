@@ -37,7 +37,7 @@ const ImageSkeleton: React.FC<ImageSkeletonProps> = React.memo(
 );
 
 if (__DEV__) {
-  ImageSkeleton.displayName = "NextUI.ImageSkeleton";
+  ImageSkeleton.displayName = "Trident.ImageSkeleton";
 }
 
 ImageSkeleton.toString = () => ".trident-image-skeleton";

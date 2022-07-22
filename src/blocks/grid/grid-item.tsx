@@ -147,7 +147,7 @@ const GridItem = React.forwardRef<
   }
 );
 
-GridItem.displayName = "NextUI.GridItem";
+GridItem.displayName = "Trident.GridItem";
 GridItem.toString = () => ".trident-grid-item";
 
 type GridItemComponent<T, P = {}> = React.ForwardRefExoticComponent<
